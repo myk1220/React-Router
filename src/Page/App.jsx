@@ -13,6 +13,8 @@ import imagineDragon from './Singer/imagineDragon';
 import TheScore from './Singer/TheScore';
 import Maroon5 from './Singer/Maroon5';
 
+//详情页
+import Details from '../Page/Details';
 
 export default class App extends React.Component{
   render(){
@@ -26,6 +28,7 @@ export default class App extends React.Component{
                 <Route path='/singer/TheScore' component={ TheScore }></Route>
           </Route>
           <Route path='/music' component={ Music }></Route>
+          <Route path='/details/:type' component={ Details }></Route>
       </Router>
     )
   }

@@ -11,13 +11,13 @@ export default class Singer extends React.Component{
                 <div>
                     <ul className='leftNav'>
                         <li>
-                            <Link activeClassName='active' to='/Singer/Maroon5'>Maroon5</Link>
+                            <Link activeClassName='active' to='/singer/Maroon5'>Maroon5</Link>
                         </li>
                         <li>
-                            <Link activeClassName='active' to='/Singer/TheScore'>TheScore</Link>
+                            <Link activeClassName='active' to='/singer/TheScore'>TheScore</Link>
                         </li>
                         <li>
-                            <Link activeClassName='active' to='/Singer/imagineDragon'>imagineDragon</Link>
+                            <Link activeClassName='active' to='/singer/imagineDragon'>imagineDragon</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,9 +1,17 @@
 import React from 'react';
 import { Router,Route,hashHistory } from 'react-router';
+
+//一级菜单
 import Goods from './Goods';
 import Music from './Music';
 import Singer from './Singer';
-import Home from './Home'
+import Home from './Home';
+import './style.css'
+
+//二级菜单
+import imagineDragon from './Singer/imagineDragon';
+import TheScore from './Singer/TheScore';
+import Maroon5 from './Singer/Maroon5';
 
 
 export default class App extends React.Component{
@@ -12,7 +20,11 @@ export default class App extends React.Component{
       <Router history={ hashHistory }>
           <Route path='/' component={ Home }></Route>
           <Route path='/goods' component={ Goods }></Route>
-          <Route path='/singer' component={ Singer }></Route>
+          <Route path='/singer' component={ Singer }>
+                <Route path='/singer/imagineDragon' component={ imagineDragon }></Route>
+                <Route path='/singer/Maroon5' component={ Maroon5 }></Route>
+                <Route path='/singer/TheScore' component={ TheScore }></Route>
+          </Route>
           <Route path='/music' component={ Music }></Route>
       </Router>
     )

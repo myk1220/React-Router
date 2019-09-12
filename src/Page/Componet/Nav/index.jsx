@@ -4,19 +4,19 @@ import { Link } from 'react-router'
 export default class Nav extends React.Component{
     render(){
         return(
-            <div>
+            <div className="Nav">
                 <ul>
                     <li>
-                        <Link to='/'>首页</Link>
+                        <Link activeClassName='active' to='/'>首页</Link>
                     </li>
                     <li>
-                        <Link to='/goods'>商品</Link>
+                        <Link activeClassName='active' to='/goods'>商品</Link>
                     </li>
                     <li>
-                        <Link to='/music'>音乐</Link>
+                        <Link activeClassName='active' to='/music'>音乐</Link>
                     </li>
                     <li>
-                        <Link to='/singer'>歌手</Link>
+                        <Link activeClassName='active' to='/singer'>歌手</Link>
                     </li>
                 </ul>
             </div>
